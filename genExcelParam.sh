@@ -7,10 +7,14 @@
 # 
 ########################################
 
+# 改行設定（環境に合わせる）
+# linux
 IFS=$'\n'
+# windows
+# IFS=$'\r\n'
+
 
 # ファイル存在確認
-
 file=genExcelParam_in.txt
 if [ ! -e $file ]; then
 	echo ${file}が存在しません。
